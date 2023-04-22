@@ -23,14 +23,17 @@ function submit(){
 // function submit() {
 //     const name = $('#name').val();
 //     dataArray.push(name);
-//     console.log(dataArray);
+//     // console.log(dataArray);
 
-//     let datadd = []
-//     for (let i = 0; i < classCss.length; i++) {
-//         datadd = dataArray.map(element => `<span class="${classCss[i]}">${element}</span><br>`);
-//     }
+//     var display = []
 
-//     $('#display').html(datadd);
-//     console.log(datadd);
+//     $.each(dataArray, function(index, value) {
+//         const cssClassIndex = index % classCss.length;
+
+//         // let span = $("<span>").text(value).addClass(classCss[cssClassIndex]);
+//         display =`<span class="${classCss[cssClassIndex]}">${value}</span><br>`
+    
+//     })
+//     $('#display').append(display);
 
 // }
