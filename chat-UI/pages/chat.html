@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../scripts/chat.js"></script>
+    <link rel="stylesheet" href="../style/chat.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+</head>
+
+<body>
+    <div class="main-app">
+        <header>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="../assets/wallpaperflare.com_wallpaper.jpg">
+                </div>
+                <span>Tushar</span>
+            </div>
+
+            <div class="search-optn">
+                <div class="search-icon">
+                    <img src="../assets/pngtree-vector-search-icon-png-image_320926-removebg-preview.png" alt="">
+                </div>
+
+                <div class="three-dots">
+                    <img src="../assets/dots.png" alt="">
+                </div>
+
+            </div>            
+        </header>
+
+        <div class="all-chats" id="chats">
+            <!-- <div class="message received">
+                <p>Hello, how are you?</p>
+                <span class="time">10:00 AM</span>
+              </div>
+              <div class="message sent">
+                <p>I'm good, thanks for asking. How about you?</p>
+                <span class="time">10:02 AM</span>
+              </div>
+              <div class="message received">
+                <p>Not bad, just busy with work.</p>
+                <span class="time">10:05 AM</span>
+              </div> -->
+        </div>
+        <footer class="chat-input">
+            <div class="emoji-file-icon">
+                <div class="emoji-icon">
+                    <img src="../assets/emoji.png" alt="">
+                </div>
+
+                <div class="file-icon">
+                    <img src="../assets/attach-file.png" alt="">
+                </div>
+            </div>
+
+            <div class="msg-input">
+                <textarea placeholder="Type a message" id="msg"></textarea>
+    <button onclick="sendMsg()"><img src="../assets/icons8-sent-60.png" class="fa fa-paper-plane"></button>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
