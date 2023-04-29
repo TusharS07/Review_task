@@ -1,0 +1,45 @@
+<div class="main-container">
+<form class="form" [formGroup] = "userData" (submit)="submitData()" >
+    <p>
+         <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="enter Name" type="text" formControlName="name">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-error>Enter Valid Name</mat-error>
+          <mat-hint></mat-hint>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="outline">
+         <mat-label>Email</mat-label>
+         <input matInput placeholder="enter Email" type="email" formControlName="email">
+         <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+         <mat-error>Enter Valid email</mat-error>
+         <mat-hint></mat-hint>
+       </mat-form-field>
+     </p>
+
+     <p>
+        <mat-form-field appearance="outline">
+         <mat-label>Password</mat-label>
+         <input matInput placeholder="enter Password" type="password" formControlName="password">
+         <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+         <mat-error>Enter Valid Password</mat-error>
+         <mat-hint></mat-hint>
+       </mat-form-field>
+     </p>
+     <!-- <mat-checkbox (click)='switchRole()'>{{role}}</mat-checkbox>
+     <br> -->
+
+     <button mat-raised-button color="primary" type="submit">Submit</button>
+
+</form>
+
+<div class="display-Data">
+<span>{{allData.name}}</span>
+<span>{{allData.email}}</span>
+<span>{{allData.password}}</span>
+<!-- <span>The Role is {{role}}</span> -->
+</div>
+</div>
