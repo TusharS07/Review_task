@@ -10,7 +10,7 @@ export class FormComponent implements OnInit {
 
   userData! : FormGroup;
 
-  allData: any ;
+  allData: any = {}
 
   role: String = "user"
 
@@ -23,11 +23,6 @@ export class FormComponent implements OnInit {
       email: ['', [Validators.required, Validators.pattern("^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$")]],
       password: ['', [Validators.required, Validators.minLength(6)]]
     })
-    this.allData = {
-      name: this.userData.value.name,
-      email: this.userData.value.email,
-      password: this.userData.value.password
-    }
   }
 
 
