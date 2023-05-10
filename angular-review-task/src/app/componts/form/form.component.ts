@@ -29,9 +29,7 @@ export class FormComponent implements OnInit {
   submitData(){
     if (this.userData.valid){
       console.log("All Data", this.userData.value);
-
-
-
+      
       this.allData = {
         name: this.userData.value.name,
         email: this.userData.value.email,
