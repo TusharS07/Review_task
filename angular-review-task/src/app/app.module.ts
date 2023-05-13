@@ -14,6 +14,8 @@ import { ChangeColorComponent } from './change-color/change-color.component';
 import { ParentComponent } from './parent/parent.component';
 import { ExamleParentComponent } from './componts/examle-parent/examle-parent.component';
 import { ExamlechildComponent } from './componts/examlechild/examlechild.component';
+import { DirectiveComponent } from './directive/directive.component';
+import { UseDirectiveInElementComponent } from './use-directive-in-element/use-directive-in-element.component';
 
 
 
@@ -24,7 +26,10 @@ import { ExamlechildComponent } from './componts/examlechild/examlechild.compone
     ChangeColorComponent,
     ParentComponent,
     ExamleParentComponent,
-    ExamlechildComponent
+    ExamlechildComponent,
+    DirectiveComponent,
+    UseDirectiveInElementComponent,
+    DirectiveComponent
   ],
   imports: [
     BrowserModule,
